@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background-color: #f4f4f6;
+    color: #333333;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Contenedor principal estilo hoja A4 */
+.cv-container {
+    background-color: #ffffff;
+    width: 850px;
+    min-height: 1100px;
+    display: flex;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* BARRA LATERAL IZQUIERDA (Estilo oscuro) */
+aside {
+    background-color: #2c2e35;
+    color: #ffffff;
+    width: 32%;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+aside h2 {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #5c616c;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+aside ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+aside ul li {
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    font-weight: 300;
+}
+
+aside .contacto li strong {
+    display: block;
+    color: #a0a5b0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+aside .habilidades ul li::before,
+aside .idiomas ul li::before {
+    content: "• ";
+    color: #8a909d;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+}
+
+/* COLUMNA DERECHA (Contenido Principal) */
+.main-content {
+    width: 68%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    color: #2c2e35;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.main-content h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #2c2e35;
+    border-bottom: 2px solid #2c2e35;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.acerca-de-mi p {
+    font-size: 0.95rem;
+    color: #555555;
+    text-align: justify;
+    font-weight: 400;
+}
+
+/* Bloques de Experiencia y Educación */
+.bloque-item {
+    margin-bottom: 20px;
+}
+
+.bloque-item h3 {
+    font-size: 1.05rem;
+    color: #2c2e35;
+    font-weight: 600;
+}
+
+.bloque-item .subtitulo {
+    font-size: 0.9rem;
+    color: #666666;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.bloque-item ul {
+    list-style: none;
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.bloque-item ul li {
+    font-size: 0.9rem;
+    color: #555555;
+    position: relative;
+    padding-left: 15px;
+}
+
+.bloque-item ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2c2e35;
+    font-weight: bold;
+}
+
+.educacion-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.educacion-item h4 {
+    font-size: 1rem;
+    color: #2c2e35;
+    font-weight: 600;
+}
+
+.educacion-item p {
+    font-size: 0.9rem;
+    color: #555555;
+}
