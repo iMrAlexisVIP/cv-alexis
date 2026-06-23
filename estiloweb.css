@@ -14,7 +14,7 @@ body {
     padding: 40px 20px;
 }
 
-/* Contenedor principal estilo hoja A4 */
+
 .cv-container {
     background-color: #ffffff;
     width: 850px;
@@ -25,7 +25,7 @@ body {
     overflow: hidden;
 }
 
-/* BARRA LATERAL IZQUIERDA (Estilo oscuro) */
+
 aside {
     background-color: #2c2e35;
     color: #ffffff;
@@ -77,7 +77,7 @@ aside .idiomas ul li::before {
     width: 1em;
 }
 
-/* COLUMNA DERECHA (Contenido Principal) */
+
 .main-content {
     width: 68%;
     padding: 50px 40px;
@@ -117,7 +117,7 @@ header h1 {
     font-weight: 400;
 }
 
-/* Bloques de Experiencia y Educación */
+
 .bloque-item {
     margin-bottom: 20px;
 }
@@ -174,33 +174,33 @@ header h1 {
     font-size: 0.9rem;
     color: #555555;
 }
-/* --- ESTILOS PARA MÓVILES (MEDIA QUERY) --- */
+
 @media (max-width: 768px) {
     body {
-        padding: 10px; /* Reducimos el espacio exterior */
+        padding: 10px; 
     }
 
     .cv-container {
-        width: 100%; /* El CV ocupa todo el ancho de la pantalla del móvil */
-        flex-direction: column; /* Cambiamos las 2 columnas a formato vertical */
+        width: 100%; 
+        flex-direction: column; 
         min-height: auto;
     }
 
-    /* La barra lateral ahora pasa a estar arriba */
+   
     aside {
         width: 100%; 
         padding: 30px 20px;
         gap: 25px;
     }
 
-    /* El contenido principal pasa a estar abajo */
+   
     .main-content {
         width: 100%;
         padding: 35px 20px;
         gap: 25px;
     }
 
-    /* Ajustamos el tamaño del nombre para que no se corte */
+    
     header h1 {
         font-size: 2.2rem;
     }
