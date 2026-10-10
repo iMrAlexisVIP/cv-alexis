@@ -14,7 +14,6 @@ body {
     padding: 40px 20px;
 }
 
-
 .cv-container {
     background-color: #ffffff;
     width: 850px;
@@ -25,7 +24,6 @@ body {
     overflow: hidden;
 }
 
-
 aside {
     background-color: #2c2e35;
     color: #ffffff;
@@ -33,7 +31,7 @@ aside {
     padding: 40px 25px;
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 30px; /* Reducido ligeramente de 35px a 30px para compensar la nueva sección sin desbordar */
 }
 
 aside h2 {
@@ -51,7 +49,7 @@ aside ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 aside ul li {
@@ -68,7 +66,21 @@ aside .contacto li strong {
     font-weight: 500;
 }
 
+
+aside .contacto a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px dotted #8a909d;
+    transition: color 0.2s ease;
+}
+
+aside .contacto a:hover {
+    color: #a0a5b0;
+}
+
+
 aside .habilidades ul li::before,
+aside .tecnologias ul li::before,
 aside .idiomas ul li::before {
     content: "• ";
     color: #8a909d;
@@ -76,7 +88,6 @@ aside .idiomas ul li::before {
     display: inline-block;
     width: 1em;
 }
-
 
 .main-content {
     width: 68%;
@@ -116,7 +127,6 @@ header h1 {
     text-align: justify;
     font-weight: 400;
 }
-
 
 .bloque-item {
     margin-bottom: 20px;
@@ -186,21 +196,18 @@ header h1 {
         min-height: auto;
     }
 
-   
     aside {
         width: 100%; 
         padding: 30px 20px;
         gap: 25px;
     }
 
-   
     .main-content {
         width: 100%;
         padding: 35px 20px;
         gap: 25px;
     }
 
-    
     header h1 {
         font-size: 2.2rem;
     }
